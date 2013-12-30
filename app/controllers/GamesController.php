@@ -37,7 +37,7 @@ class GamesController extends BaseController
 	}
 	public function delete(Game $game)
 	{
-		return View::make('delete');
+		return View::make('delete', compact('game'));
 	}
 	public function handleDelete()
 	{
